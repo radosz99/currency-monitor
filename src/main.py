@@ -27,7 +27,7 @@ current_hour = datetime.now().strftime("%H:%M")
 raport_id = rap.insert_raport(current_day, current_hour, conn)
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--headless')
-driver = webdriver.Chrome('resources/chromedriver.exe', chrome_options)
+driver = webdriver.Chrome('resources/chromedriver.exe', options = chrome_options)
 driver.get("https://www.x-rates.com/table/?from=PLN&amount=1")
 el = driver.find_elements_by_xpath("//tr")
 for e in el[1:]:
