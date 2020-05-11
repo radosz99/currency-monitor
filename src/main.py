@@ -38,8 +38,8 @@ for e in el[1:]:
         continue   
     old_value = cur.insert_currency(raport_id, name, value, conn)
     if old_value is not None:
-        print(f'Waluta {name}, stara wartość {old_value}, nowa wartość {value}')
         if(str(old_value) != value):
-            print(f'Nastąpiła zmiana, różnica to {float(value)-float(old_value)}')
+            print(f'CHANGE OCCURED | Currency {name}, old - {old_value}, new - {value}')
+            #print(f'Nastąpiła zmiana, różnica to {float(value)-float(old_value)}')
         else:
-            print('Nic się nie zmieniło')
+            print(f'NO CHANGE | Currency {name}, old - {old_value}, new - {value}')
