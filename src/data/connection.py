@@ -53,7 +53,8 @@ def create_table(conn):
 
 def get_connection():
     #database = r"resources\currency_history.db"
-    database = r"C:\Users\Radek\Desktop\6semestr\DPP\lab_10_selenium\e-science\resources\currency_history.db"
+    #database = r"C:\Users\Radek\Desktop\6semestr\DPP\lab_10_selenium\e-science\resources\currency_history.db"
+    database = r"resources\currency_history.db"
 
     # create a database connection
     conn = create_connection(database)
