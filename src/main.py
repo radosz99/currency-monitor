@@ -40,6 +40,6 @@ for e in el[1:]:
     if old_value is not None:
         if(str(old_value) != value):
             print(f'CHANGE OCCURED | Currency {name}, old - {old_value}, new - {value}')
-            #print(f'Nastąpiła zmiana, różnica to {float(value)-float(old_value)}')
         else:
             print(f'NO CHANGE | Currency {name}, old - {old_value}, new - {value}')
+driver.quit()
